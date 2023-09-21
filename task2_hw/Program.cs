@@ -3,7 +3,7 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-int numberB, numberA;
+int numberA, numberB;
 
 Console.WriteLine("Ввод первого числа: ");
 numberA =  Convert.ToInt32(Console.ReadLine());
