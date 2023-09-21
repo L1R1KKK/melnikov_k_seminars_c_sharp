@@ -6,11 +6,11 @@
 int numberA, numberB, numberAB;
 
 Console.WriteLine("Введите число №1: ");
-numberA =  Convert.ToInt32(Console.ReadLine());
+numberA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число №2: ");
-numberB =  Convert.ToInt32(Console.ReadLine());
+numberB = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число №3: ");
-numberAB =  Convert.ToInt32(Console.ReadLine());
+numberAB = Convert.ToInt32(Console.ReadLine());
 
 
 if ((numberA > numberB) && (numberA > numberAB))
