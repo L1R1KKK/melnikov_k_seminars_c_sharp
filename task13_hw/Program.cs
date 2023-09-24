@@ -25,7 +25,7 @@ bool LessDigit(int num)
 int number;
 Console.WriteLine("Введите трехзначное число: ");
 number = Convert.ToInt32(Console.ReadLine());
-if (LessDigit(number))
+if  (LessDigit(number))
 {
     Console.WriteLine(ThirdDigit(number));
 }
