@@ -24,6 +24,5 @@ int quarter = Quarter(xCoorinate, yCoorinate);
 string result = quarter > 0 
                         //справшиваем больше ли 0 или нет
                         ? $"Указанные координаты соответсвуют четверти {quarter}"
-                         
                         : "Введены некоректные координаты";
 Console.WriteLine(result);
