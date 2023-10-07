@@ -28,8 +28,8 @@ bool Valid(int exponent)
     return true;
 }
 
-int powerBase = Prompt("Enter base ");
-int exponent = Prompt("Enter index ");
+int powerBase = Prompt("Основание ");
+int exponent = Prompt("Показатель ");
 if (Valid(exponent))
 {
     Console.WriteLine($"Number {powerBase} in degree {exponent} = {Power(powerBase, exponent)} ");

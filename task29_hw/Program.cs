@@ -2,26 +2,26 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-int Prompt(string message) //Ввод числа с экрана
+int Prompt(string message) 
 {
-    Console.Write(message); //Сам ввод
+    Console.Write(message); 
     string readInput = Console.ReadLine();
-    int result = int.Parse(readInput); // Перевод string в int
-    return result; // Получение результата
+    int result = int.Parse(readInput); 
+    return result; 
 }
 
-int[] GenerateArray(int Length, int minValue, int maxValue) // Метод для получения случайных значений массива
+int[] GenerateArray(int Length, int minValue, int maxValue) 
 {
-    int[] array = new int[Length]; // Задаем массив
-    Random random = new Random();  // Генерация цифр массива
+    int[] array = new int[Length];   
+    Random random = new Random(); 
     for (int i = 0; i < Length; i++)
     {
-        array[i] = random.Next(minValue, maxValue + 1); // Заполняем случайными цифрами из даиапозона min -> max
+        array[i] = random.Next(minValue, maxValue + 1); 
     }
     return array;
 }
 
-void PrintArray(int[] array) // Наш массив
+void PrintArray(int[] array) // 
 {
     Console.Write("["); 
     for (int i = 0; i < array.Length; i++)
