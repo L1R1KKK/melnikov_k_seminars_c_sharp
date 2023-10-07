@@ -25,3 +25,4 @@ else
 {
     Console.WriteLine($"{firstNumber}, {secondNumber} -> не кратно, остаток {remainderNumber}");
 }
+//

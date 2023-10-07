@@ -14,3 +14,4 @@ void TableCoube(int number)
         count += 1;
     }
 }
+//

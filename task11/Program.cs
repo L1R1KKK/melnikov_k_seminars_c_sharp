@@ -21,3 +21,4 @@ int DeleteSecondDigit(int number)
 int res = DeleteSecondDigit(num);
 
 Console.WriteLine(res);
+//

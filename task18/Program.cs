@@ -21,3 +21,4 @@ int quater = Convert.ToInt32(Console.ReadLine());
 string result = QuaterToCoords(quater);
 
 Console.WriteLine((result != null) ? result : "user did not input quater number");
+//

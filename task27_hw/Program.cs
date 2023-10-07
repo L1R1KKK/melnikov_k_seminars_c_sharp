@@ -25,3 +25,4 @@ int SumAllDigit(int number)
 
 int number = Prompt("Put digit");
 Console.WriteLine($"Summ all digit in number {number} = {SumAllDigit(number)}");
+//

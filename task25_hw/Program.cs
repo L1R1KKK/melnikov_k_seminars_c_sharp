@@ -22,15 +22,16 @@ bool Valid(int exponent)
 {
     if (exponent < 0)
     {
-        Console.WriteLine("new > 0");
+        Console.WriteLine("Ошибка! Число степени должно быть > 0");
         return false;
     }
     return true;
 }
 
-int powerBase = Prompt("Основание ");
-int exponent = Prompt("Показатель ");
+int powerBase = Prompt("Заданное число ");
+int exponent = Prompt("Степень ");
 if (Valid(exponent))
 {
-    Console.WriteLine($"Number {powerBase} in degree {exponent} = {Power(powerBase, exponent)} ");
+    Console.WriteLine($"Заданное число {powerBase} в степени {exponent} = {Power(powerBase, exponent)} ");
 }
+//

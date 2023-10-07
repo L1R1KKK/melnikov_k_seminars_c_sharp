@@ -24,3 +24,4 @@ int secondNumber = 23;
 //     Console.WriteLine($"{number} -> no");
 bool result = MultipleTwoNumbers(number, firstNumber, secondNumber);
 Console.WriteLine(result ? $"{number} -> yes" :$"{number} -> no" );
+//`

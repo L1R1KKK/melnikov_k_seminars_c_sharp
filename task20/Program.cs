@@ -27,3 +27,4 @@ double Distance(int xValue1, int xValue2, int yValue1, int yValue2)
     double result = Math.Sqrt(Math.Pow((xValue2 - xValue1), 2) + Math.Pow((yValue2 - yValue1), 2));
     return result; 
 }
+//

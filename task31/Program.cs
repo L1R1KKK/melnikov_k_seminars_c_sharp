@@ -80,3 +80,4 @@ int sumNegativeElem = GetSumNegativeElem(array);
 
 Console.WriteLine($"Сумма положительных элементов => {sumPositiveElem}");
 Console.WriteLine($"Сумма отрицательных элементов => {sumNegativeElem}");
+//

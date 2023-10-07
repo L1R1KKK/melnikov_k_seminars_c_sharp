@@ -11,3 +11,4 @@ while(count <= n)
     Console.Write($"{count++} ");
     // count = count + 1; // count++;
 }
+//

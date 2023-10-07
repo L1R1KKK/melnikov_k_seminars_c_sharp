@@ -38,3 +38,4 @@ public class Answer
         else System.Console.WriteLine($"Число не пятизначное\r\n{result}");
     }
 }
+//

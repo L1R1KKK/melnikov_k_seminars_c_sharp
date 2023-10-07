@@ -20,3 +20,4 @@ int square = number * number;
 //Console.WriteLine(number + " -> " + square);
 //Интерполяция строк
 Console.WriteLine($"{number} -> {square}");
+//

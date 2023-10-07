@@ -24,3 +24,4 @@ int y3 = Coordinate("Y3", "B");
 double segmentLength = Math.Round(DistanceBetweenPoints(x1, x2, y1, y2, y3, x3), 2 );
 
 Console.WriteLine($"Длина отрезка  {segmentLength}");
+//

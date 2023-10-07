@@ -19,3 +19,4 @@ bool isSquareTwoNumbers (int num1, int num2)
 }
 bool result = isSquareTwoNumbers(firstNumber, secondNumber);
 Console.WriteLine(result ? $"{firstNumber}, {secondNumber} -> yes" :$"{firstNumber}, {secondNumber} -> no" );
+//

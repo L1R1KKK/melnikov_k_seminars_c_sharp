@@ -50,3 +50,4 @@ PrintArray(array);
 
  bool findNumber = FindNumber(array, number);
  Console.WriteLine(findNumber ? "Число найдено ": "Число не найдено");
+ //

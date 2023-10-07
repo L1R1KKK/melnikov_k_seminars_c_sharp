@@ -9,18 +9,13 @@ int Factorial (int num)
     int result = 1;
     for(int i = 1; i <= num; i++)
     {
-        checked
+        checked //проверка переполнения для арифметических операций 
         {
             result = result * i;
         }
-        
     }
     return result;
 }
-
-
-
-
 Console.WriteLine("введите целое положительное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
@@ -33,3 +28,4 @@ if  (number < 1)
 
 int resultFactorial = Factorial(number);
 Console.WriteLine($"Произведение чисел от 1 до {number} -> {resultFactorial}");
+//

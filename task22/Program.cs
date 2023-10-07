@@ -18,3 +18,4 @@ void TableSquare(int number)
         count += 1;
     }
 }
+//

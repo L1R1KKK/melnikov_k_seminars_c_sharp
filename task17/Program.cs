@@ -26,3 +26,4 @@ string result = quarter > 0
                         ? $"Указанные координаты соответсвуют четверти {quarter}"
                         : "Введены некоректные координаты";
 Console.WriteLine(result);
+//

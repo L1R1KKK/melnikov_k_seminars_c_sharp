@@ -16,3 +16,4 @@ if (num < 100 || num >= 1000)
 Console.WriteLine($"Введеное число:{num}");
 int secondDigit = num / 10 % 10;
 Console.WriteLine($"Вторая цифра: {secondDigit}");
+//
