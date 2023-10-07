@@ -5,31 +5,29 @@
 // положительных чисел равна 29, сумма отрицательных равна
 // -20.
 
-int[] CreateArrayRndInt(int size, int min, int max)
+int[] CreateArrayRndInt(int size, int min, int max) //метод создания массива
 {
-    int[] arr = new int[size];
+    int[] arr = new int[size]; // размер массива
     Random rnd = new Random();
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++) // проход по всем эллементам массива 
     {
-        arr[i] = rnd.Next(min, max + 1);
+        arr[i] = rnd.Next(min, max + 1); //заполнение массива случайными целыми числами
     }
 
-    return arr;
+    return arr; // возвращаем наш массив
 }
 
-void PrintArray(int[] arr)
+void PrintArray(int[] arr) // метод для вывода массива в консоль
 {
-    //Console.WriteLine("[");
     for (int i = 0; i < arr.Length; i++)
     {
         if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
         else Console.Write($"{arr[i]}");
     }
-    //Console.WriteLine("]");
 }
 
-int[] GetSumPositiveNegativeElem(int[] arr)
+int[] GetSumPositiveNegativeElem(int[] arr) //метод который возвращает нам одномерный массив с 2 результатами
 {
     int sumPositive = 0;
     int sumNegative = 0;
@@ -65,7 +63,7 @@ int GetSumNegativeElem(int[] arr)
     return sum;
 }
 
-int[] array = CreateArrayRndInt(12, -9, 9);
+int[] array = CreateArrayRndInt(12, -9, 9); //длинна массива и диапозон
 Console.Write("[");
 PrintArray(array);
 Console.WriteLine("]");

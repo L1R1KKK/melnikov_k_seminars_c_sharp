@@ -21,7 +21,7 @@ int[] GenerateArray(int Length, int minValue, int maxValue)
     return array;
 }
 
-void PrintArray(int[] array) // 
+void PrintArray(int[] array) 
 {
     Console.Write("["); 
     for (int i = 0; i < array.Length; i++)
@@ -32,9 +32,9 @@ void PrintArray(int[] array) //
     Console.WriteLine("]");
 }
 
-int length = Prompt("Array length ");
-int min = Prompt("Start array - ");
-int max = Prompt("End array - ");
+int length = Prompt("Длинна масива ");
+int min = Prompt("Начало массива - ");
+int max = Prompt("Конец массива - ");
 int[] array = GenerateArray(length, min, max);
 PrintArray(array);
 //
