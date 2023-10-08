@@ -7,34 +7,47 @@
 // 8 4 2 4
 // Сумма элементов главной диагонали: 1+9+2 = 12
 
-int[,] matrix = new int[,]; // rows =3,  columns = 4
-    Random rnd = new();
-void CreatMatrixRandomInt(int[,] arr)
+int[,] CreatMatrixRndInt(int rows, int colums, int min, int max)
 {
-    for (int i = 0; i < matrix.GetLength(0); i++) // по строкам
+    int[,] matrix = new int[rows, colums];
+    Random rnd = new Random();
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = rnd.Next(x + 1);
+            matrix[i, j] = rnd.Next(min, max + 1);
         }
     }
-    
+    return matrix;
 }
 
-int SumOnDigit(int[,] arr)
+int SumMatrix(int[,] matrix)
 {
-    int size = arr.GetLength(1);
-    if (arr.GetLength(0) < arr.GetLength(1)) size = arr.GetLength(0);
+    int size = matrix.GetLength(1);
+    if (matrix.GetLength(0) < matrix.GetLength(1))
+        size = matrix.GetLength(0);
     int sum = 0;
     for (int i = 0; i < size; i++)
     {
-        sum += arr[i, i];
+        sum += matrix[i, i];
     }
     return sum;
 }
+void PrintMatrix(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++) 
+    {
+        Console.Write("[");
+        for (int j = 0; j < matrix.GetLength(1); j++) 
+        {
+            Console.Write($"{matrix[i, j], 5}");
+        }
+        Console.WriteLine("  ]");
+    }
+}
 
-int[,] rndMatrix = CreatMatrixRandomInt(5, 4, 1, 10);
-PrintMatrix(rndMatrix);
+int[,] matr = CreatMatrixRndInt(3, 3, 1, 10);
+PrintMatrix(matr);
 
-int sumOnDiagonal = SumOnDigit(rndMatrix);
-Console.WriteLine($"Сумма элементов на главной диагонали равна - {sumOnDiagonal}");
+int sumMatrix = SumMatrix(matr);
+Console.WriteLine($"сумма элементов {sumMatrix}");

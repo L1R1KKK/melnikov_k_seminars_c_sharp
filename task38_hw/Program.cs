@@ -5,8 +5,8 @@ Console.Clear();
 double[] arrayRealNumbers = new double[10]; //создаем наш массив с кол-во элментов
 
 Random rnd = new Random();
-double min = 10;
-double max = 100;
+double min = 10.00F;
+double max = 100.00F;
 Console.Write($"Получившийся массив -> ");
 for (int i = 0; i < arrayRealNumbers.Length; i++) // даем диапозон и выводим на экран
 {
