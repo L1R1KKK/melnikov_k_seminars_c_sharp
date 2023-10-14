@@ -51,3 +51,4 @@ PrintMatrix(matr);
 
 int sumMatrix = SumMatrix(matr);
 Console.WriteLine($"сумма элементов {sumMatrix}");
+

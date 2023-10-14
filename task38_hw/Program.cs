@@ -8,7 +8,8 @@ Random rnd = new Random();
 double min = 10.00;
 double max = 100.00;
 Console.Write($"Получившийся массив -> ");
-for (int i = 0; i < arrayRealNumbers.Length; i++) // даем диапозон и выводим на экран
+for (int i = 0; i < arrayRealNumbers.Length; i++)
+ // даем диапозон и выводим на экран
 {
     arrayRealNumbers[i] = rnd.NextDouble() * (max - min) + min ;
     
