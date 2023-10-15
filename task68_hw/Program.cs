@@ -17,11 +17,11 @@ else if (n < 0)
     System.Console.WriteLine($"Ошибка! Число n не должно быть отрицательным!!");
     return;
 }
-int Ack(int m, int n)
+int Ack(int numberM, int numberN)
 {
-  if (m == 0) return n + 1;
-  else if (n == 0) return Ack(m - 1, 1);
-  else return Ack(m - 1, Ack(m, n - 1));
+  if (numberM == 0) return numberN + 1;
+  else if (numberN == 0) return Ack(numberM - 1, 1);
+  else return Ack(numberM - 1, Ack(numberM, numberN - 1));
 }
 
 int functionAkkerman = Ack(m, n);
